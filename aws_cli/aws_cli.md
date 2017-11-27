@@ -109,3 +109,38 @@ aws ec2 describe-reagions | jpterm
 - Exit using **Ctr+C**
 - You can build comples queries in jamespath terminal and then use then with **Query** option directly to use in programatic way. 
 
+## CLI Commands for AWS S3
+
+### - Create a bucket (make bucket - mb)
+
+- create a bucket call *'unique-name-of-the-bucket'*.
+- More help using - **aws s3 mb help**
+
+```
+$ aws s3 mb s3://unique-name-of-the-bucket
+```
+### - Copy files to a bucket (copy - cp)
+
+- Copy the file call FILE_NAME to the bucket and a directly within in call *dir-name*
+- More help using - **aws s3 cp help**
+```
+$ aws s3 cp FILE_NAME s3://unique-name-of-the-bucket/dir-name/
+```
+
+### - List all the buskets 
+
+- This command will display all the buskets that are in the account. 
+
+```
+$ aws s3 ls
+```
+
+### - List all the files within a bucket 
+
+```
+aws s3 ls s3://unique-name-of-the-bucket
+```
+
+### - 
+
+
