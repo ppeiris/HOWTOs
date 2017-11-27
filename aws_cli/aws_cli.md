@@ -107,5 +107,5 @@ aws ec2 describe-reagions | jpterm
 *image credit to https://github.com/jmespath/jmespath.terminal*
 
 - Exit using **Ctr+C**
-
+- You can build comples queries in jamespath terminal and then use then with **Query** option directly to use in programatic way. 
 
