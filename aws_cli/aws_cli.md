@@ -1,7 +1,8 @@
-# AWS Command Line
+AWS Command Line
+====================
 - AWS CLI is a case sensitive framework 
 
-## Configure
+# Configure
 
 ### - Set up initial configuration
 ```
@@ -41,6 +42,20 @@ $ complete -C '/staff/ppeiris/anaconda2/envs/tensorflow/bin/aws_completer' aws
 ```
 Now you can double tap TAB key to autocomplete aws commands 
 
+### - Dry Run
+
+Dry run allow to run the command line options without really making any real effect. This wont give us any output, it will give a message saying the command would have success or fail. 
+
+```
+$ aws ec2 describe-regions --dry-run
+```
+Output 
+```
+An error occurred (DryRunOperation) when calling the DescribeRegions operation: Request would have succeeded, but DryRun flag is set.
+```
+
+
+# Process Data
 
 ### - Filters Option
 
@@ -64,18 +79,6 @@ Output
         "Endpoint": "ec2.us-west-1.amazonaws.com"
     }
 ]
-```
-
-### - Dry Run
-
-Dry run allow to run the command line options without really making any real effect. This wont give us any output, it will give a message saying the command would have success or fail. 
-
-```
-$ aws ec2 describe-regions --dry-run
-```
-Output 
-```
-An error occurred (DryRunOperation) when calling the DescribeRegions operation: Request would have succeeded, but DryRun flag is set.
 ```
 
 ## Process JSON data using Jamespath query language
@@ -109,7 +112,7 @@ aws ec2 describe-reagions | jpterm
 - Exit using **Ctr+C**
 - You can build comples queries in jamespath terminal and then use then with **Query** option directly to use in programatic way. 
 
-## CLI Commands for AWS S3
+# CLI Commands for AWS S3
 
 ### - Create a bucket (make bucket - mb)
 
