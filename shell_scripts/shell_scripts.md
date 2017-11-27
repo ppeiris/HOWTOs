@@ -150,3 +150,23 @@ set -e
 ![testing_integers](img/22.png)
 
 
+
+## Some command line tricks 
+
+### list all the unique file names (only by the starting portion that separate by -)
+```
+ls -1 | cut -f1 -d\- | sort | uniq
+```
+
+### list unique names (part of the name)
+```
+ls | xargs -0 | cut -d'-' -f-1 | uniq
+```
+
+### Find and replace 
+
+```
+grep -rl subsestion . | xargs sed -i 's/subsestion/subsection/g'
+
+```
+
