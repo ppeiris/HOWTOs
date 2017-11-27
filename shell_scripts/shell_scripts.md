@@ -143,3 +143,10 @@ set -e
 
 ## Arrays
 - http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_10_02.html
+
+
+![testing_integers](img/testingIntegers.png)
+
+![testing_integers](img/22.png)
+
+
