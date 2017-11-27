@@ -66,7 +66,42 @@ Output
 ]
 ```
 
+### - Dry Run
 
+Dry run allow to run the command line options without really making any real effect. This wont give us any output, it will give a message saying the command would have success or fail. 
 
+```
+$ aws ec2 describe-regions --dry-run
+```
+Output 
+```
+An error occurred (DryRunOperation) when calling the DescribeRegions operation: Request would have succeeded, but DryRun flag is set.
+```
+
+## Process JSON data using Jamespath query language
+
+JAMESpath is a query language for JSON data (http://jmespath.org/). 
+
+Install using conda
+
+```
+conda install -c conda-forge jmespath
+```
+
+Install JAMESpath terminal 
+
+https://github.com/jmespath/jmespath.terminal
+```
+pip install jmespath-terminal
+```
+
+### - How to use jpterm 
+Following command get the list of reagions in JSON format and open up the jamespath terminal to interact with the data. 
+```
+aws ec2 describe-reagions | jpterm
+```
+[iamge](https://cloud.githubusercontent.com/assets/368057/5158770/6a6afb6e-72fe-11e4-8be3-893edf21920e.gif)
+
+.. image:: https://cloud.githubusercontent.com/assets/368057/5158770/6a6afb6e-72fe-11e4-8be3-893edf21920e.gif
 
 
