@@ -100,8 +100,9 @@ Following command get the list of reagions in JSON format and open up the jamesp
 ```
 aws ec2 describe-reagions | jpterm
 ```
-[iamge](https://cloud.githubusercontent.com/assets/368057/5158770/6a6afb6e-72fe-11e4-8be3-893edf21920e.gif)
 
-.. image:: https://cloud.githubusercontent.com/assets/368057/5158770/6a6afb6e-72fe-11e4-8be3-893edf21920e.gif
+![jamespath](img/jmespath.gif)
 
+*image credit to https://github.com/jmespath/jmespath.terminal*
 
+Exit using **Ctr+C**
