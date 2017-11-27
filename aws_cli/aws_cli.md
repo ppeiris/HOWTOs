@@ -103,6 +103,9 @@ aws ec2 describe-reagions | jpterm
 
 ![jamespath](img/jmespath.gif)
 
+
 *image credit to https://github.com/jmespath/jmespath.terminal*
 
-Exit using **Ctr+C**
+- Exit using **Ctr+C**
+
+
