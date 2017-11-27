@@ -1,2 +1,2 @@
 # HOWTOs
-Some howtos that I build while I am learning new things. 
+- [AWS CLI](aws_cli/aws_cli.md)
