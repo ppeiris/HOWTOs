@@ -141,6 +141,59 @@ $ aws s3 ls
 aws s3 ls s3://unique-name-of-the-bucket
 ```
 
-### - 
+### - Move all the files from S3 to local dir (mv --recursive)
+
+- This move all the files from S3 bucket to local folder (remove from the S3)
+
+```
+$ aws s3 mv s3://unique-name-of-the-bucket . --recursive
+```
+
+### - Move files from local dir to S3
+
+- exclude and include flags can be use to pick which files need to be move
+
+```
+$ aws s3 mv . s3://unique-name-of-the-bucket --recursive --exclude '*' --include '*.txt'
+```
+
+### - Sync local filed with S3 (|S3 to local | S3 to S3)
+- This will sync local files to S3 
+    - This update the files that nees updates 
+    - New files get created in S3
+
+```
+$ aws s3 sync . s3://unique-name-of-the-bucket
+```
+
+### - Sync files with delete option 
+- This flag delete the files that are deleted from the local folder 
+
+```
+$ aws s3 sync . s3://unique-name-of-the-bucket --delete
+```
+
+### - Upload a file with public read permission (acl)
+
+```
+$ aws s3 cp FILE_NAME s3://unique-name-of-the-bucket --acl public-read
+```
+
+### - Delete files from S3 (rb)
+
+- Delete files from S3
+
+```
+$ aws s3 rb FILE_NAME s3://unique-name-of-the-bucket 
+```
+
+- Delete all the files from S3 & delete the bucket 
+
+```
+$ aws s3 rb s3://unique-name-of-the-bucket --force
+```
+
+
+
 
 
