@@ -12,12 +12,14 @@ type -a command # this will give you all types of the given command
 $ ./ScriptName arg1 arg2 arg3
 ```
 ```
-echo $0     # this will print the script name (argument zero)
+echo $0     # this will print the script name with the path (argument zero)
+echo $(basename $0) # this will print only the file name
 echo $1     # this will print the first argument given when executing the shell script
 echo $*      # this will print all the arguments given when  executing the script
 echo $@    # this will print all the argument given when executing the script
-echo $#    # his will print the number of argument that given to the script when it executed
-echo $?    # Exit numerical value of the last command ran on the shell
+echo $#    # this will print the number of argument that given to the script when it executed
+echo $?    # display Exit numerical value of the last command ran on the shell
+echo $$    # print the pid of the program
 ```
 
 ## Variables
@@ -110,13 +112,16 @@ if [[ -n "Hello" ]]; then
 fi
 ```
 ```
-[ -z "test ]
+[ -z "test" ]
 # [ -z $var ] check if the var is null
 if [[ -z "Hello" ]]; then
      echo "Not Null"
 fi
 ```
 
+```
+[ -e $filename ] # return 0 if file exists and 1 if does not
+```
 ## Negation
 
 
@@ -140,6 +145,48 @@ set -e
 
 - http://mywiki.wooledge.org/BashFAQ/105
 - http://stackoverflow.com/questions/19622198/what-does-set-e-mean-in-a-bash-script
+
+
+## kill -0 pid
+```
+kill -0 3234 
+```
+- exit 0 if the process is running **do not kill the process**
+- exit with error if the process is not running. "bash: kill: (3234) - No such process"
+---
+
+## trap 
+https://www.youtube.com/watch?v=0btsvoSt76M
+
+Trap a command that can be executed at predefined state of the script
+
+```
+trap 'rm -f $FILE;' EXIT # file remove at exit of the script
+
+# INT - interrupt
+# HUP - Hangup
+# QUIT - quit
+# TERM - Terminate
+# EXIT - exit
+
+trap 'rm -f $FILE;' INT HUP QUIT TERM EXIT
+```
+
+## Keep Files Safe From Accidental Overwriting With noclobber BASH Shell Option
+
+- Enable accidental overrides to files. When this option is set, you can not write to the file and replace the contents. If you want intentionally wirte to the file you can use >| command
+```
+set -o noclobber
+```
+- Write to the protected file
+```
+echo "write forcefully" >| file.txt
+```
+- disable the override protection 
+```
+set +o noclobber
+```
+
 
 ## Arrays
 - http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_10_02.html
