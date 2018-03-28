@@ -186,6 +186,9 @@ echo "write forcefully" >| file.txt
 ```
 set +o noclobber
 ```
+![clobbering](img/clobbering.gif)
+
+https://www.cyberciti.biz/tips/howto-keep-file-safe-from-overwriting.html
 
 
 ## Arrays
