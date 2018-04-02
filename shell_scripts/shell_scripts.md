@@ -7,6 +7,26 @@ type -t command # this will give you what kind of command is this
 type -a command # this will give you all types of the given command
 ```
 
+
+# Command Options (`getopt`)
+
+
+Command line input viewed in 3 categories by `getopt`
+- Short options (like -a)
+     - use a single character without argument (example `-a` or `-A`)
+     - use with arguments
+          - with required arguments (example `-a arg1` or `-H arg2`)
+          - with optional arguments (example `-aarg1`, note the **sapces** between the option `-a` and the argument `arg1`)
+- Long options (Options start with `--` like `--some-option`)
+     - without argument (`--options-a` or `--more-2-go`)
+     - with arguments
+          - with required orgumnets `--file-to-process reports` or `--package-name-prefix='com.bahmanm'`
+          - without optional arguments `--package-name-prefix='com.bahmanm'` (note the `=`)
+- Non-options (like /home/dir/reports.txt)
+     - 
+
+http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-getopt
+
 ## Special Variables
 ```
 $ ./ScriptName arg1 arg2 arg3
@@ -219,4 +239,14 @@ ls | xargs -0 | cut -d'-' -f-1 | uniq
 grep -rl subsestion . | xargs sed -i 's/subsestion/subsection/g'
 
 ```
+
+
+
+
+
+
+
+
+
+
 
