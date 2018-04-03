@@ -8,8 +8,9 @@ type -a command # this will give you all types of the given command
 ```
 
 
-# Command Options (`getopt`)
+# Command Options 
 
+http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-getopt
 
 Command line input viewed in 3 categories by `getopt`
 - Short options (like -a)
@@ -22,10 +23,33 @@ Command line input viewed in 3 categories by `getopt`
      - with arguments
           - with required orgumnets `--file-to-process reports` or `--package-name-prefix='com.bahmanm'`
           - without optional arguments `--package-name-prefix='com.bahmanm'` (note the `=`)
-- Non-options (like /home/dir/reports.txt)
-     - 
+- Non-option parameters
+     
 
-http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-getopt
+## Option String `(getopt)`
+`getopt` takes 2 options strings normally (one for short options and one for long options).
+
+- Option string for short options 
+     - each character stands for an option 
+     - **A:** (colon character) tells that the option has a required argument 
+     - **A::** (two consequent colon character) tells that the option has an optional argument
+
+Example
+- **f:gh::i:** (short options)
+     - 4 options 
+     - **f** - has required argument (**:**)
+     - **g** - has a no args
+     - **h** - has optional arg (**::**)
+     - **i** - has a required arg (**:**)
+- **foo,bar::,baz:,foobar** (long options)
+     - 3 options 
+     - **foo** - has no args
+     - **bar** - has optional arg (**::**)
+     - **baz** - has required arg (**:**)
+     - **foobar** - has no args
+     
+     
+     
 
 ## Special Variables
 ```
