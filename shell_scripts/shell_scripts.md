@@ -13,17 +13,17 @@ type -a command # this will give you all types of the given command
 http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-getopt
 
 Command line input viewed in 3 categories by `getopt`
-- Short options (like -a)
+- **Short options (like -a)**
      - use a single character without argument (example `-a` or `-A`)
      - use with arguments
           - with required arguments (example `-a arg1` or `-H arg2`)
           - with optional arguments (example `-aarg1`, note the **sapces** between the option `-a` and the argument `arg1`)
-- Long options (Options start with `--` like `--some-option`)
+- **Long options** (Options start with `--` like `--some-option`)
      - without argument (`--options-a` or `--more-2-go`)
      - with arguments
           - with required orgumnets `--file-to-process reports` or `--package-name-prefix='com.bahmanm'`
           - without optional arguments `--package-name-prefix='com.bahmanm'` (note the `=`)
-- Non-option parameters
+- **Non-option parameters**
      
 
 ## Option String `(getopt)`
