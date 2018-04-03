@@ -203,6 +203,7 @@ https://www.cyberciti.biz/tips/howto-keep-file-safe-from-overwriting.html
 # Command Options 
 
 http://www.bahmanm.com/blogs/command-line-options-how-to-parse-in-bash-using-getopt
+http://floppsie.comp.glam.ac.uk/Glamorgan/gaius/scripting/4.html
 
 Command line input viewed in 3 categories by `getopt`
 - **Short options (like -a)**
