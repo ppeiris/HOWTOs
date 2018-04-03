@@ -238,7 +238,9 @@ Example
      - **bar** - has optional arg (**::**)
      - **baz** - has required arg (**:**)
      - **foobar** - has no args
-     
+
+**Shift**
+http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_07.html
      
      
 
