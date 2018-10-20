@@ -31,13 +31,20 @@ sudo apt-get update && sudo apt-get upgrade
 
 - Download the docker install package from  http://apt.dockerproject.org/repo/pool/main/d/
 
-Install Docker 
-ppeiris@debian:~$ sudo dpkg -i docker-engine_17.05.0~ce-0~debian-stretch_amd64.deb
+- Install Docker
 
-Test the installation
-$ docker --version 
+    ```
+    ppeiris@debian:~$ sudo dpkg -i docker-engine_17.05.0~ce-0~debian-stretch_amd64.deb
+    ```
 
-Add the user to docker group in order to use docker commands without using sudo 
+- Test the installation
 
-$ sudo usermod -aG docker ppeiris
-reboot after this command
+    ```
+    $ docker --version 
+    ```
+
+- Add the user to docker group in order to use docker commands without using sudo 
+
+    ```
+    $ sudo usermod -aG docker ppeiris
+    ```
