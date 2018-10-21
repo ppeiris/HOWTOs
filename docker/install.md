@@ -16,7 +16,7 @@ Docker installation instructions in Debian
 
     ![adduser](img/adduser.png)
 
-### Install Linux headers 
+### Install Linux headers
 
 ```
 sudo apt-get install linux-headers-$(uname -r)
@@ -28,7 +28,7 @@ sudo apt-get update && sudo apt-get upgrade
 - Install required packages: 
     
     ```
-        $ sudo apt-get install libapparmor1 aufs-tools ca-certificates
+    $ sudo apt-get install libapparmor1 aufs-tools ca-certificates
     ```
 
 - Download the docker install package from  http://apt.dockerproject.org/repo/pool/main/d/
@@ -50,3 +50,50 @@ sudo apt-get update && sudo apt-get upgrade
     ```
     $ sudo usermod -aG docker ppeiris
     ```
+
+
+### Install Docker Composer 
+
+- Download the Docker composer file 
+
+    ```
+    $ wget https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m`
+    ```
+
+- Move the file in to system path 
+
+    ```
+    $ sudo mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+    ```
+
+- Make the file executable 
+
+    ```
+    $ sudo chmod +x /usr/local/bin/docker-compose
+    ```
+
+- Test the installation 
+    ```
+    $ docker-compose --version
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
