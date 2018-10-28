@@ -57,9 +57,15 @@ Take a look at the busybox docker image.
 ![busyboxinside](img/busyboxinside.png)
 
 - Remove docker images 
-
+""
 ![dockerimr](img/dockerimr.png)
 
+## Create Docker image form a container 
 
+Lets run a Docker image. This time lets use the ubuntu docker image. This will download the docker ubuntu image and run it.
 
+```
+$ docker run -ti --rm ununtu
+```
 
+![dockerrunubuntu](img/dockerrunubuntu.png)
