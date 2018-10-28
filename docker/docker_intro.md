@@ -29,6 +29,8 @@
 
 ## Download and run a docker image from docker hub (https://hub.docker.com/)
 
+### busybox example:
+
 - Docker can download and run pubilc images. The following command download the busybox docker latest image and run the echo command. 
     - ```--rm``` flag remove the docker container after it ran
 
