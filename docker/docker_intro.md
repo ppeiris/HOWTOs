@@ -70,4 +70,4 @@ Lets run a Docker image. This time lets use the ubuntu docker image. This will d
 $ docker run -ti --rm ununtu
 ```
 
-![dockerrunubuntu](img/dockerrunubuntu.png)
+![dockerrnubuntu](img/dockerrnubuntu.png)
