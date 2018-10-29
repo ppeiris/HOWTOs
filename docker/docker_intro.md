@@ -70,7 +70,7 @@ Lets run a Docker image. This time lets use the ubuntu docker image. This will d
 $ docker run -ti --rm ununtu
 ```
 
-![dockerrunubuntu](img/dockerrunubuntu.png)
+![dockerrnubuntu](img/dockerrnubuntu.png)
 
     - Get the docker container id using ```docker ps -a ``` command
     - Create a new docker image from the container id
@@ -92,8 +92,4 @@ $ docker commit CONTAINER_ID NEW_IMAGE_NAME
 ## Complete Docker Flow 
 
 ![dockerflow](img/dockerflow.png)
-
-
-
-
 
