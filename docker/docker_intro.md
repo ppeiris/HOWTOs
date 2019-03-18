@@ -93,3 +93,13 @@ $ docker commit CONTAINER_ID NEW_IMAGE_NAME
 
 ![dockerflow](img/dockerflow.png)
 
+
+## Run couple of commands and exit
+
+Execute couple of commands and exit from the container. The container will be live only during the commands execution. These commands will run one after the other. 
+
+```
+$ docker run -ti ununtu bash -c "sleep 3; echo all done"
+```
+
+
