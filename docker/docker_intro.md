@@ -111,7 +111,7 @@ Docker run with with detach mode.
 $ docker run -d -ti ubuntu bash
 ```
 
-### Attache 
+### Attach
 Attache a docker container that start with -d option
 
 ```
@@ -134,9 +134,12 @@ $ docker exec -ti a34f7141498f bash
 
 ## Looking at Container outputs
 
+Docker log all the outputs. Access these logs using 
 
-
-
+```
+$ docker logs CONTAINER_ID
+```
+**Make sure not to write tons of data to docker logs, these logs can get really large over time**
 
 
 
