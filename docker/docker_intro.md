@@ -102,4 +102,43 @@ Execute couple of commands and exit from the container. The container will be li
 $ docker run -ti ununtu bash -c "sleep 3; echo all done"
 ```
 
+## Docker run with Detach and Attached 
+
+### Detach
+Docker run with with detach mode. 
+
+```
+$ docker run -d -ti ubuntu bash
+```
+
+### Attache 
+Attache a docker container that start with -d option
+
+```
+$ docker attach CONTAINER_ID
+```
+
+#### Exit from attached container 
+
+Deattach with Ctr-p Ctr-q
+
+
+#### Attach another process to a existing container 
+This method is good for debugging and DB admin stuff (can not add additional volumnes or ports)
+
+In this example I am adding bash process
+```
+$ docker exec -ti a34f7141498f bash
+```
+
+
+## Looking at Container outputs
+
+
+
+
+
+
+
+
 
