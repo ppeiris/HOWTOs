@@ -141,6 +141,13 @@ $ docker logs CONTAINER_ID
 ```
 **Make sure not to write tons of data to docker logs, these logs can get really large over time**
 
+## Remove and Kill Containers 
+
+Remove running containers form the memory 
+```
+$ docker 
+```
+delete containers 
 
 
 
