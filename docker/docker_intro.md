@@ -150,5 +150,29 @@ $ docker
 delete containers 
 
 
+# Dockerfile 
+## Write a Docker file 
+
+TODO
+
+## Build a Docker Image 
+
+Build a docker image form a docker file 
+
+```
+$ Docker build -t NEW_IMAGE_NAME /path/to/Dockerfile
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
