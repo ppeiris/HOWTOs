@@ -200,7 +200,7 @@ $ Docker build -t zendexpressive .
 - define the docker image 
 
 ```
-docker run --rm -it \
+$ docker run --rm -it \
         -v /base/path:/opt \
         zendexpressive:latest \
         composer create-project zendframework/zend-expressive-skeleton /opt/api
