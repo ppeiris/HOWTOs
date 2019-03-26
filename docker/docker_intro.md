@@ -163,6 +163,44 @@ Build a docker image form a docker file
 $ Docker build -t NEW_IMAGE_NAME /path/to/Dockerfile
 ```
 
+# Get ZendExpressive Up and running using Docker
+
+## Create a Docker image including php 7.3
+
+Create a Dockerfile and add the following. 
+
+```
+FROM php:7.3.3-cli
+
+MAINTAINER Prabath Peiris
+
+# Update the system
+RUN apt-get update
+# Install dependencies
+RUN apt-get install -y zip unzip curl git
+# Install Composer
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php --install-dir=/usr/bin --filename=composer
+RUN php -r "unlink('composer-setup.php');"
+```
+
+## Build the Docker Image from Dockerfile 
+
+Docker image name set to `zendexpressive`
+
+Dockerfile is in the local dir
+
+```
+$ Docker build -t zendexpressive .
+```
+
+## Install ZendExpressive skeleton application
+
+
+docker run --rm -it \
+        -v /home/prabath/projects:/opt \
+        zendexpressive:latest \
+        composer create-project zendframework/zend-expressive-skeleton /opt/api-test
 
 
 
