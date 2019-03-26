@@ -206,7 +206,16 @@ $ docker run --rm -it \
         composer create-project zendframework/zend-expressive-skeleton /opt/api
 ```
 
+## Run the php webserver 
+- Map the ports (ssh port forwarding localhost:9992 -> 0.0.0.0:9992
 
+```
+docker run --rm -it \
+        -p 9992:9992 \
+        -v /base/path:/opt \
+        zendexpressive:latest \
+        php -S 0.0.0.0:9992 -t /opt/api/public
+```
 
 
 
