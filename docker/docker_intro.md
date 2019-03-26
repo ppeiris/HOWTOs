@@ -196,11 +196,15 @@ $ Docker build -t zendexpressive .
 
 ## Install ZendExpressive skeleton application
 
+- Mount a base volume to `/opt`
+- define the docker image 
 
+```
 docker run --rm -it \
-        -v /home/prabath/projects:/opt \
+        -v /base/path:/opt \
         zendexpressive:latest \
-        composer create-project zendframework/zend-expressive-skeleton /opt/api-test
+        composer create-project zendframework/zend-expressive-skeleton /opt/api
+```
 
 
 
