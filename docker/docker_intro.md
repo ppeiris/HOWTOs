@@ -145,9 +145,32 @@ $ docker logs CONTAINER_ID
 
 Remove running containers form the memory 
 ```
-$ docker 
+$ docker kill CONTAINER_NAME OR CONTAINER_ID
 ```
-delete containers 
+delete containers
+```
+$ docker rm CONTAINER_NAME OR CONTAINER_ID
+```
+
+# Resource Constraints
+
+## Memory limits 
+We can limit how much memory a container can use
+```
+$ docker run --memory MAX-ALLOED-MEMORY IMAGE_ID
+$ docker run --memory 5m IMAGE_ID 
+```
+
+## CUP limits 
+Limit number of CPUs to share 
+```
+$ docker run --cpu-shares 
+```
+
+## Put hard limits on how much CPU time a container can use 
+```
+$ docker run --cpu-quota 
+```
 
 
 # Dockerfile 
