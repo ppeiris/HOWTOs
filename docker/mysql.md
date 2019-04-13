@@ -36,5 +36,9 @@ $ docker exec -it CONTAINER_ID bash
 
 Go to the /etc/myql directory 
 
+![etc-mysql](img/etc-mysql.png)
+
+Everything is in the `cond.d` directry automatically get loaded 
+
 
 
