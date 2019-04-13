@@ -42,5 +42,5 @@ Go to the /etc/myql directory
 
 Go to the /etc/mysq/conf.d
 
-![etc-mysql](img/etc-mysql-conf.d.png)
+![etc-mysql](img/etc-mysql-conf.png)
 
