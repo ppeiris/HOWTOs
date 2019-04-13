@@ -26,3 +26,15 @@ volumes:
 $ docker-compose up -d 
 ```
 ***-d deattach the terminal from the process***
+
+
+## Connect to the container and run bsh shell
+
+```
+$ docker exec -it CONTAINER_ID bash 
+```
+
+Go to the /etc/myql directory 
+
+
+
