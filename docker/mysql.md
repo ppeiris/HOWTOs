@@ -38,7 +38,9 @@ Go to the /etc/myql directory
 
 ![etc-mysql](img/etc-mysql.png)
 
-Everything is in the `cond.d` directry automatically get loaded 
+**Everything is in the `cond.d` directry automatically get loaded**
 
+Go to the /etc/mysq/conf.d
 
+![etc-mysql](img/etc-mysql-conf.d.png)
 
