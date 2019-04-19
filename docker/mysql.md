@@ -42,5 +42,24 @@ Go to the /etc/myql directory
 
 Go to the /etc/mysq/conf.d
 
-![etc-mysql](img/etc-mysql-conf.png)
+![etc-mysql](img/ect-mysql-conf.png)
+
+
+### All the files (*.cnf) in the conf.d directory get loaded. 
+ 
+ - Everything is in the `docker.cnf` get loaded. 
+
+ `docker.conf` file
+```
+[mysqld]
+skip-host-cache
+skip-name-resolve
+```
+ - `mysql.cnf` file does not have much to get loaded, it has a `[mysql]` section as a placeholder 
+
+#### If we need to load any other config, just add another `.cnf` file into `conf.d` directory
+
+## Enable query log
+- Query-log logs all the queries that run against the database 
+
 

@@ -132,7 +132,12 @@ $ docker exec -ti a34f7141498f bash
 ```
 
 
-## Looking at Container outputs
+# Logging with Docker
+
+Docker log the messages of every container into a json file. In Debian based sustem the log file can be found at `/var/lib/docker/containers/CONTAINERID/CONTAINERID-json.log`
+
+### Access Docker logs 
+More information about the loger - https://docs.docker.com/config/containers/logging/configure/
 
 Docker log all the outputs. Access these logs using 
 
@@ -140,6 +145,57 @@ Docker log all the outputs. Access these logs using
 $ docker logs CONTAINER_ID
 ```
 **Make sure not to write tons of data to docker logs, these logs can get really large over time**
+
+### Log to syslog
+
+Tell the Docker to send all the logs to host's syslog using built-in `syslog` driver:
+
+```bash
+$ docker run --log-driver syslog --log-opt tag=SOME_TAG [other options]
+```
+
+`SOME_TAG` - Add a tag to the log message 
+
+**The logs can be foind at `/var/log/syslog` in the host machine.**
+
+Docker composer config for logging 
+
+```yaml
+version: '2'
+  services:
+    website:
+      restart: unless-stopped
+      image: nginx
+      container_name: website
+      volumes:
+        - /srv/web/default/:/usr/share/nginx/html
+      logging:
+        driver: syslog
+        options:
+          tag: SOME_TAG/website
+```
+
+## Store Docker logs in seperate files
+
+Each docker container can take its own syslog file other than writing to `/var/log/syslog`. 
+
+We can use the [`Rsyslog`](https://www.rsyslog.com/) service for this. 
+
+Add the following code to `/etc/rsyslog.conf`
+```bash 
+if $syslogtag contains 'SOME_TAG/' then /var/log/LOG_FILE_NAME
+& ~
+```
+
+## Disentangle the Container logs
+
+Read : https://binfalse.de/2018/02/21/logging-with-docker/
+
+##  Rotate syslogs
+
+Read: https://binfalse.de/2018/02/21/logging-with-docker/
+
+
 
 ## Remove and Kill Containers 
 
