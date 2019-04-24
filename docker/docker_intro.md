@@ -131,6 +131,14 @@ In this example I am adding bash process
 $ docker exec -ti a34f7141498f bash
 ```
 
+# Restarting a container when it crash 
+
+- You can pass the argument to restart the container then it failed 
+
+```
+$ docker run -d -it --restart=always ubuntu 
+```
+
 
 # Logging with Docker
 
@@ -298,11 +306,48 @@ docker run --rm -it \
 
 
 
+# Docker Registry
 
+## Search Images 
+```
+$ docker search ubuntu # This will search ubuntu images 
+```
 
+## Login to docker registry 
 
+```
+$ docker login # provide username and password 
+```
 
+### Pull images from the registry
+- Once you login to the docker registry you can pull images 
+```
+$ docker pull debian:sid
+```
 
+### Rename the docker image 
 
+- Push a doker images to docker hub for public to use
 
+```
+$ docker tag debian:sid prabath/test-image:v1.1
+$ docker push prabath/test-image:v1.1
+```
+
+# Save docker images
+
+## Save image to a tar file 
+- You can save as many docker images to a tar.gz file 
+
+```
+$ docker save -o my-images.tar.gz debian:sid ubuntu:12.02 
+```
+
+## Load images from tar file
+
+- Load all the doker images from a tar.gz file
+
+```
+$ docker load -i my-images.tar.gz
+```
 
