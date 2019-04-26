@@ -183,6 +183,13 @@ version: '2'
           tag: SOME_TAG/website
 ```
 
+- Docker compose run as follows 
+
+```bash
+$ docker-compose up -d 
+```
+
+
 ## Store Docker logs in seperate files
 
 Each docker container can take its own syslog file other than writing to `/var/log/syslog`. 
