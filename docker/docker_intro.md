@@ -166,7 +166,7 @@ $ docker run --log-driver syslog --log-opt tag=SOME_TAG [other options]
 
 **The logs can be foind at `/var/log/syslog` in the host machine.**
 
-Docker composer config for logging 
+Docker compose config for logging 
 
 ```yaml
 version: '2'

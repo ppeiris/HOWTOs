@@ -20,7 +20,7 @@ volumes:
     driver: "local"
 ```
 
-## Docker composer 
+## Docker compose 
 
 ```bash
 $ docker-compose up -d 
@@ -71,7 +71,7 @@ general-log-file=/var/log/mysql/query.log
 
 - We can map all the logs and conf.d dir to host machine dir so we can overide the container files. 
 
-#### Final docker-composer file
+#### Final docker-compose file
 
 ```bash 
 version: '3'
@@ -101,7 +101,7 @@ volumes:
 ```
 
 
-## mysqldump 
+## mysqldump (Backup database)
 
 Backup the database using mysqldump 
 
@@ -131,8 +131,9 @@ $ docker restart CONTAINER_NAME
 docker exec CONTAINER_NAME mysqldump DB_NAME  > backup.sql
 ```
 
+## Restore Database 
 
-
-
-
+```bash
+$ cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
+```
 
