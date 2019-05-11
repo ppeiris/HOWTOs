@@ -36,6 +36,14 @@ Change surrounding tags
 cst<new tag>
 ```
 
+# Screen 
+
+## Rename screen window
+
+ctl+a shift+a
+
+
+
 
 
 
