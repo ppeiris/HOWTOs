@@ -66,7 +66,7 @@ Example:
  - Final services will have ports that is defined in override file
 
 **Dcoker-compose.yml**
-```bash 
+```yaml 
 # Dcoker-compose.yml
 version '3'
 services:
@@ -79,7 +79,7 @@ services:
 ```
 
 **Dcoker-compose.override.yml**
-```bash 
+```yaml 
 # Dcoker-compose.override.yml
 version '3'
 services:
@@ -103,7 +103,7 @@ $ docker-compose \
 
 **Dcoker-compose.yml**
 
-```bash 
+```yaml 
 # Dcoker-compose.yml
 version '3'
 services:
@@ -116,7 +116,7 @@ services:
 ```
 
 **Dcoker-compose.another.yml**
-```bash 
+```yaml 
 # Dcoker-compose.another.yml
 version '3'
 services:
@@ -126,6 +126,22 @@ services:
     db: 
         image: NEW_IMAGE # Override the image form Dcoker-compose.yml
 ```
+
+
+# Use Custom Dockerfiles in docker-compose
+
+```yaml
+version: "3.5"
+services:
+    # Building API server that is running php7.3 + apache web server
+    web:
+        container_name: web
+        # Build using custom Dockerfile
+        build:
+          context: . # Path to custom Dockerfile
+          dockerfile: Dockerfile_WebApp # Custom Dockerfile name
+```
+
 
 # Swarm Mode
 
