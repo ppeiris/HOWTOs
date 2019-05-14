@@ -66,3 +66,21 @@ ctl+a shift+a
  g~~  : Invert case to entire line
 
  guG : Change to lowercase until the end of document.
+ 
+ # Ctags
+ 
+ Install 
+ ```
+ $ sudo apt-get install ctags
+ ```
+
+Create tag files 
+```
+$ ctags -R.
+```
+
+Usage 
+
+- Type <C-]> to jump to a symbol. Keep typing to build a stack of symbols.
+- Type <C-t> to jump back. Pop back to where you last were. Works until the stack of symbols is exhausted.
+ 
