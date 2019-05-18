@@ -94,3 +94,9 @@ Usage
 
 ```Ctrl-w w``` or type ```:wincmd w``` to move the cursor between the two windows/buffers.
 
+# Kill a screen window 
+
+select stalled window ( C-a :select <stalled window number> )
+send kill command ( C-a :kill )
+ 
+ 
