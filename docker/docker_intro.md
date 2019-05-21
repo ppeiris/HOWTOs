@@ -358,3 +358,9 @@ $ docker save -o my-images.tar.gz debian:sid ubuntu:12.02
 $ docker load -i my-images.tar.gz
 ```
 
+# Remove Docker dangling images 
+```
+$ docker system prune -a
+```
+https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
+
