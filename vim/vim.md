@@ -99,4 +99,5 @@ Usage
 select stalled window ( C-a :select <stalled window number> )
 send kill command ( C-a :kill )
  
- 
+# Reindent the entier file 
+gg=G
