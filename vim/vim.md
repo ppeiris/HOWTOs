@@ -101,3 +101,8 @@ send kill command ( C-a :kill )
  
 # Reindent the entier file 
 gg=G
+
+# yank lines without moving the cursor using relative numbers 
+
+: +2, +3y # this will copy the line below 
+: -3, -2y # this will copy the line above 
