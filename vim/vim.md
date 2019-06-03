@@ -110,3 +110,5 @@ gg=G
 # search and replace a char by new line 
 :%s/Search_term/\r/gc
 
+# Scroll in screen window 
+Ctr+a UP_ARROW | DOWN_ARROW
