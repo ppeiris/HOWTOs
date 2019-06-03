@@ -106,3 +106,7 @@ gg=G
 
 : +2, +3y # this will copy the line below 
 : -3, -2y # this will copy the line above 
+
+# search and replace a char by new line 
+:%s/Search_term/\r/gc
+
