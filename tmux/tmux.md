@@ -29,3 +29,8 @@ tmux detach (prefix + d)
 ```
 
 detach the currently attached session
+
+
+```
+tmux kill-session -t another
+```
