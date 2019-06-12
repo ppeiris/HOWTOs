@@ -34,3 +34,8 @@ detach the currently attached session
 ```
 tmux kill-session -t another
 ```
+
+
+Rename 
+
+Ctl+a (or b) ,
