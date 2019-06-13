@@ -39,3 +39,10 @@ tmux kill-session -t another
 Rename 
 
 Ctl+a (or b) ,
+
+
+
+kill window 
+
+ctl+a &
+
