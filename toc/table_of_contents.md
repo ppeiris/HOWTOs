@@ -14,3 +14,6 @@
 
 ## RNN
 - https://github.com/ppeiris/deep-learning/blob/master/intro-to-rnns
+
+## Clustering 
+- https://github.com/ppeiris/machine-learning/blob/master/projects/creating_customer_segments
