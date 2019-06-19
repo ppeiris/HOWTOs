@@ -10,3 +10,6 @@
 
 ## Batch Normalization 
 - https://github.com/ppeiris/deep-learning/blob/master/batch-norm
+
+## RNN
+- https://github.com/ppeiris/deep-learning/blob/master/intro-to-rnns
