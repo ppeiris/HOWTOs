@@ -17,3 +17,6 @@
 
 ## Clustering 
 - https://github.com/ppeiris/machine-learning/blob/master/projects/creating_customer_segments
+
+## DecisionTree
+- https://github.com/ppeiris/machine-learning/blob/master/projects/boston_housing/boston_housing.ipynb
