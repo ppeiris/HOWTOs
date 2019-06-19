@@ -27,3 +27,6 @@
 
 ## F1 Score 
 - https://github.com/ppeiris/machine-learning/blob/master/projects/student_intervention/student_intervention.ipynb
+
+## PCA
+- https://github.com/ppeiris/machine-learning/tree/master/learn/PrincipalComponenetAnalysis
