@@ -3,3 +3,6 @@
 
 ## GAN 
 - https://github.com/ppeiris/deep-learning/blob/master/gan_mnist/Intro_to_GANs_Solution.ipynb
+
+## Autoencoder
+- https://github.com/ppeiris/deep-learning/blob/master/autoencoder/Simple_Autoencoder_Solution.ipynb
