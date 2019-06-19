@@ -20,3 +20,10 @@
 
 ## DecisionTree
 - https://github.com/ppeiris/machine-learning/blob/master/projects/boston_housing/boston_housing.ipynb
+
+
+## Grid Search 
+- https://github.com/ppeiris/machine-learning/blob/master/projects/student_intervention/student_intervention.ipynb
+
+## F1 Score 
+- https://github.com/ppeiris/machine-learning/blob/master/projects/student_intervention/student_intervention.ipynb
