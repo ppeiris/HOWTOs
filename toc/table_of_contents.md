@@ -3,6 +3,7 @@
 
 ## GAN 
 - https://github.com/ppeiris/deep-learning/blob/master/gan_mnist
+- https://github.com/ppeiris/deep-learning/tree/master/dcgan-svhn
 
 ## Autoencoder
 - https://github.com/ppeiris/deep-learning/blob/master/autoencoder
