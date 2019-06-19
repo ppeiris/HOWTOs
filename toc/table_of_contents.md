@@ -6,3 +6,6 @@
 
 ## Autoencoder
 - https://github.com/ppeiris/deep-learning/blob/master/autoencoder
+
+## Batch Normalization 
+- https://github.com/ppeiris/deep-learning/blob/master/batch-norm
