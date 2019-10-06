@@ -27,3 +27,14 @@ Authentication BASIC base64(username:password)
     - Secure: The cookie only be accessible to https pages 
     - HTTPOnly: The cookie cannot be read by Javascript
     
+### HTML
+- HTML parsed not only by your browser, it's also parsed by Web-Application Firewalls and other filters. There can be discrepancy in how these two parse things 
+- Legacy Parsing
+  - Most web pages has broken html (Browser usually clean these things up) 
+  - ```<script>``` tag on its own will automatically be closed at the end of the page 
+  - A tag missing its closing angle bracket ```>``` will automatically be closed by the angle bracket of the next tag on the page 
+ 
+### Content Sniffing 
+- 
+ 
+ 
