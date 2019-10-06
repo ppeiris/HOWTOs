@@ -23,4 +23,7 @@ Authentication BASIC base64(username:password)
   - Cookies added to a subdomain can be read by that subdoamin and its subdomains
   - A subdomain can set cookies for its subdomains and its parent
   - A Subdomain CAN NOT SET cookirs for its siblings 
-  
+  - Two important falgs in Cookies (these flags indicate in the Set-Cookie header)
+    - Secure: The cookie only be accessible to https pages 
+    - HTTPOnly: The cookie cannot be read by Javascript
+    
