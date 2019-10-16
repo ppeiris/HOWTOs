@@ -20,8 +20,10 @@
 - Metadatabase:
   - A database where allt he metadata related to your jobs are stored.
 
+### Airflow in a single Node 
 ![img1](img/sf1.png)
 
+### Airflow in a multinodes 
 ![img2](img/sf2.png)
 
 
