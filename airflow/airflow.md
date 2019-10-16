@@ -21,3 +21,5 @@
   - A database where allt he metadata related to your jobs are stored.
 
 ![img1](img/af_single.png)
+
+![img2](img/sf_multi.png)
