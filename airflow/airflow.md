@@ -11,3 +11,11 @@
   - Representation a specific run of a task = DAG + TASK + POINT IN TIME
 - Workflow:
   - Combination of all above 
+- Scheduler:
+  - Responsible for scheduling your jobs
+- Executor:
+  - Message queuing process tightly bound to the Scheduler and dtermines the worker processes that actually execute each task. 
+- Workers:
+  - Processes taht execute the tasks, determined by the executor
+- Metadatabase:
+  - A database where allt he metadata related to your jobs are stored.
