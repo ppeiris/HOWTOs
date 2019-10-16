@@ -19,3 +19,5 @@
   - Processes taht execute the tasks, determined by the executor
 - Metadatabase:
   - A database where allt he metadata related to your jobs are stored.
+
+![alt text][img/af_single.png]
