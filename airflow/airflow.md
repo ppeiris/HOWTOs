@@ -20,4 +20,4 @@
 - Metadatabase:
   - A database where allt he metadata related to your jobs are stored.
 
-![img1][img/af_single.png]
+![img1](img/af_single.png)
