@@ -22,4 +22,4 @@
 
 ![img1](img/af_single.png)
 
-![img2](img/af_multi.png)
+![img2](img/sf_multi.png)
