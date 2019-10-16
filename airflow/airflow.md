@@ -27,3 +27,12 @@
 ![img2](img/sf2.png)
 
 ### How Workd Gets Done 
+
+1. The schedulear reads the DAG folder
+    - DAG folder contain all the python files that describe tasks
+2. DAG is parsed by a process to create a DagRun based on the scheduling parameters of your DAG.
+3. A TaskINstance is indtatiated for each Task that needs to be executed and flagged to "Scheduled" in the metadata database.
+4. Scheduler get the info from database that are flagged as "shecduled" and change to "Queued" and sends them to the executors to be executed. 
+5. Executors pull out the Tasks from the queue and change the state to "running" and workikers start executing the taskinstances. 
+6. When task is finishedm the Executor changes the state of the task to final state.
+ 
