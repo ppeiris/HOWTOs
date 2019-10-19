@@ -10,6 +10,15 @@ Systemd manage start and and stopping services. also, it manages how processes s
 $ systemctl list-units
 ```
 
+#### List all the unit files 
+```
+$ systemctl list-units-files4783j9uJLRzELPwwbXBz
+
+
+```
+
+
+
 #### List only the services that are running in the system
 ```
 $ systemctl list-units | grep .service 
@@ -69,7 +78,7 @@ $ journalctl -u docker
 
 ### Monitor process using systemd
 
-
+https://www.youtube.com/watch?v=WE_gz2BY4i0
 
 
 
