@@ -62,6 +62,11 @@ $ journalctl
 $ journalctl -b 
 ```
 
+#### Logs specific to service 
+```
+$ journalctl -u docker  
+```
+
 
 
 
