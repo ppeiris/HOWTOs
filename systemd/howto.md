@@ -50,6 +50,19 @@ $ systemctl --failed
 $ systemctl is-enabled docker 
 ```
 
+### Display Logs 
+
+Query the systemd journal (logs)
+```
+$ journalctl 
+```
+
+#### Current boot logs 
+```
+$ journalctl -b 
+```
+
+
 
 
 
