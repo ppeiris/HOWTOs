@@ -112,3 +112,8 @@ gg=G
 
 # Scroll in screen window 
 Ctr+a UP_ARROW | DOWN_ARROW
+
+
+
+https://www.youtube.com/watch?v=wlR5gYd6um0&t=1420s
+
