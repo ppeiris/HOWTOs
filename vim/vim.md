@@ -121,3 +121,12 @@ https://www.youtube.com/watch?v=wlR5gYd6um0&t=1420s
 # Folding
 
 -  
+
+# NeoVim
+
+```
+:scr[iptnames]
+```
+- List all sourced script names, in the order they were first sourced.  The number is used for the script ID
+
+
