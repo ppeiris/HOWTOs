@@ -43,7 +43,34 @@ $ sudo file -s /dev/xvdf
 /dev/xvdf: Linux rev 1.0 ext4 filesystem data, UUID=b0d84fa2-a9cf-4278-b79f-e1cdc70f944f (extents) (64bit) (large files) (huge files)
 ```
 
+- We have to mount that storage to a directory 
+```
+$ mkdir /ftrml 
+```
 
+- mount the directory
+```
+$ sudo mount /dev/xvdf /ftrml/
+```
+
+- Check the mount
+```
+$ df -hT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+devtmpfs       devtmpfs   15G     0   15G   0% /dev
+tmpfs          tmpfs      15G     0   15G   0% /dev/shm
+tmpfs          tmpfs      15G  436K   15G   1% /run
+tmpfs          tmpfs      15G     0   15G   0% /sys/fs/cgroup
+/dev/xvda1     xfs       8.0G  1.3G  6.8G  16% /
+tmpfs          tmpfs     3.0G     0  3.0G   0% /run/user/1000
+/dev/xvdf      ext4       50G   53M   47G   1% /ftrml
+```
+
+- Add this permenantly update the /etc/fstab (Add the following line)
+
+```
+/dev/xvdf /ftrml ext4 defaults,nofail, 0 0
+```
 
 
 
