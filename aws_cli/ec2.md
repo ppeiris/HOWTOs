@@ -78,6 +78,12 @@ tmpfs          tmpfs     3.0G     0  3.0G   0% /run/user/1000
 $ mount -a
 ```
 
+- Give ec2-user to EBS volume 
+```
+$ sudo chown ec2-user /ftrml
+```
+
+
 
 
 
