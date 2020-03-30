@@ -72,6 +72,12 @@ tmpfs          tmpfs     3.0G     0  3.0G   0% /run/user/1000
 /dev/xvdf /ftrml ext4 defaults,nofail, 0 0
 ```
 
+- Run the following command to mount
+
+```
+$ mount -a
+```
+
 
 
 
