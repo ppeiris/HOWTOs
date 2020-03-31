@@ -5,3 +5,9 @@
 
 - Launch a spot instance using template (if you have the template setup)
 
+- Mount the volume
+
+- Get the gitlab repo 
+
+- install the basics 
+
