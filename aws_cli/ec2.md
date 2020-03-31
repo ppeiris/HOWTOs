@@ -1,4 +1,4 @@
-Attach a volume to ec2
+# Attach a volume to EC2
 - attach the volume 
 - list the block
 ```
