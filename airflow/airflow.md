@@ -49,6 +49,35 @@ Steps to implement DAG
 
 ![img3](img/dag1.png)
 
+```python
+# Default arguments for the dag
+default_args = {
+    "owner": "airflow",
+    "start_date": datetime(2021, 1, 21),
+    "depends_on_past": False,
+    "email_on_failure": False,
+    "email_on_retry": False,
+    "email": "",
+    "retries": 1,
+    "retry_delay": timedelta(day=1)
+}
+
+# define the DAG
+with DAG(dag_id="process-t3-label-data-feature-extraction",
+        schedule_interval="@daily",
+        default_args=default_args,
+        catchup=False) as dsg:
+
+    # Define operators here 
+    #...
+```
+
+## Define Operators
+
+- Operators are attomic unit (task) that execute some function. 
+- Not more than one task should be define within one operator. 
+- If we have couple of tasks, then define operators for each and link them together.
+
 
 
 
