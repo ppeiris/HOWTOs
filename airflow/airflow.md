@@ -44,8 +44,10 @@
 - `default_args`: a dir contain parameters that will apply to all operators and to the task
 - `catchup`: perform scheduler catchup (True by default). If this is True and start date from 1 year from past and schedule interval is 1 day, then dag will run for each day for past year. 
 
+# Implement DAG
+Steps to implement DAG
 
-
+![img3](img/dag1.png)
 
 
 
