@@ -36,3 +36,12 @@
 5. Executors pull out the Tasks from the queue and change the state to "running" and workikers start executing the taskinstances. 
 6. When task is finishedm the Executor changes the state of the task to final state.
  
+#### Important Properties of a DAG
+- `dag_id`: unique identifier of a dag
+- `description`: the description of the dag
+- `start_date`: what date the dag should start. At the beginning dag will run starting the start date. For example if you have the start date setup 3 years ago, thats the date it will use to start running the dag.
+- `schedule_interval`: Define how often the dag rum starting from start_date
+- `default_args`: a dir contain parameters that will apply to all operators and to the task
+- `catchup`: perform scheduler catchup (True by default)
+
+
