@@ -83,7 +83,10 @@ with DAG(dag_id="process-t3-label-data-feature-extraction",
   - *PythonOperator*: Call an arbitrary python function
   - *EmailOperator*: Sends an email
   - *MySqlOperator*, SqliteOperator, PorstgreOperator: execute SQl commands 
-
+  - *TransferOperator*: 
+    - Move data from one system to another. 
+    - Data will be pulled out from the source, stages on the machine where the executor is running, and then transfered to the target system.
+    - **Do not use this operator if you are dealing with large amount of data**
 ![operators](img/operator1.png)
 
 
