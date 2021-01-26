@@ -77,6 +77,14 @@ with DAG(dag_id="process-t3-label-data-feature-extraction",
 - Operators are attomic unit (task) that execute some function. 
 - Not more than one task should be define within one operator. 
 - If we have couple of tasks, then define operators for each and link them together.
+- Retry automatically if spcified (in case of failure)
+- Example of operators:
+  - *BashOperator*: Execute bash operators
+  - *PythonOperator*: Call an arbitrary python function
+  - *EmailOperator*: Sends an email
+  - *MySqlOperator*, SqliteOperator, PorstgreOperator: execute SQl commands 
+
+![operators](img/operator1.png)
 
 
 
