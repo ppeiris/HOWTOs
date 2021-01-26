@@ -42,6 +42,11 @@
 - `start_date`: what date the dag should start. At the beginning dag will run starting the start date. For example if you have the start date setup 3 years ago, thats the date it will use to start running the dag.
 - `schedule_interval`: Define how often the dag rum starting from start_date
 - `default_args`: a dir contain parameters that will apply to all operators and to the task
-- `catchup`: perform scheduler catchup (True by default)
+- `catchup`: perform scheduler catchup (True by default). If this is True and start date from 1 year from past and schedule interval is 1 day, then dag will run for each day for past year. 
+
+
+
+
+
 
 
