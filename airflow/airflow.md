@@ -82,11 +82,12 @@ with DAG(dag_id="process-t3-label-data-feature-extraction",
   - *BashOperator*: Execute bash operators
   - *PythonOperator*: Call an arbitrary python function
   - *EmailOperator*: Sends an email
-  - *MySqlOperator*, SqliteOperator, PorstgreOperator: execute SQl commands 
-  - *TransferOperator*: 
+  - *MySqlOperator*: SqliteOperator, PorstgreOperator: execute SQl commands 
+  - *SensorOperator*: Monitor external processes. Has a poke method called repeatedly until it returns True
+  - *TransferOperator*: **_Do not use this operator if you are dealing with large amount of data_**
     - Move data from one system to another. 
     - Data will be pulled out from the source, stages on the machine where the executor is running, and then transfered to the target system.
-    - **Do not use this operator if you are dealing with large amount of data**
+
 ![operators](img/operator1.png)
 
 
