@@ -74,6 +74,10 @@ with DAG(dag_id="process-t3-label-data-feature-extraction",
 
 ## Define Operators
 
+https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/
+
+![operators](img/operator1.png)
+
 - Operators are attomic unit (task) that execute some function. 
 - Not more than one task should be define within one operator. 
 - If we have couple of tasks, then define operators for each and link them together.
@@ -88,7 +92,7 @@ with DAG(dag_id="process-t3-label-data-feature-extraction",
     - Move data from one system to another. 
     - Data will be pulled out from the source, stages on the machine where the executor is running, and then transfered to the target system.
 
-![operators](img/operator1.png)
+
 
 
 
