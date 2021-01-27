@@ -196,7 +196,12 @@ $ aws s3 rb FILE_NAME s3://unique-name-of-the-bucket
 $ aws s3 rb s3://unique-name-of-the-bucket --force
 ```
 
+# Update aws cli to version 2 in mac
 
+```
+$ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+$ sudo installer -pkg AWSCLIV2.pkg -target /
+```
 
 
 
